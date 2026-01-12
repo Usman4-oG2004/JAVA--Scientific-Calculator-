@@ -54,9 +54,9 @@ public class CalculatorEngineTest {
         assertThrows(NumberFormatException.class, () -> calculator.calculate("abc"));
         assertThrows(NumberFormatException.class, () -> calculator.calculate(""));
     }
-}
-@Test
-public void testPerformOperationBasicArithmetic() {
+
+    @Test
+    public void testPerformOperationBasicArithmetic() {
     double eps = 1e-9;
     assertEquals(5.0, calculator.performOperation(2, 3, "+"), eps);
     assertEquals(-1.0, calculator.performOperation(2, 3, "-"), eps);
@@ -87,4 +87,5 @@ public void testPerformScientificInvalidInputsAndFunctions() {
     assertThrows(IllegalArgumentException.class, () -> calculator.performScientificOperation(-1, "log"));
     assertThrows(IllegalArgumentException.class, () -> calculator.performScientificOperation(-9, "sqrt"));
     assertThrows(IllegalArgumentException.class, () -> calculator.performScientificOperation(2, "unknownFunc"));
+}
 }
