@@ -1,7 +1,7 @@
-import static org.junit.jupiter.api.Assertions.*;
+package com.example.calculator;
 import org.junit.jupiter.api.BeforeEach;
+import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-import com.example.calculator.CalculatorEngine;
 
 public class CalculatorEngineTest {
     private CalculatorEngine calculator;
